@@ -1,98 +1,41 @@
-import { Text, ScrollView, View, SafeAreaView } from 'react-native'; 
+import { ScrollView, Text } from 'react-native';
+import { SafeAreaView, SafeAreaProvider } 
+  from 'react-native-safe-area-context'; 
 
 export default function App() {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: 'red' }}>
-      <View>   <Text> Cabeçalho </Text>   </View>
-      
-      <ScrollView style={{ flex: 1, backgroundColor: 'yellow' }}>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-        <Text style={{ margin: 50 }}>
-          Um texto demonstrativo!
-        </Text>
-      </ScrollView>
+    <SafeAreaProvider style={{ flex: 1 }} >
 
-      <View> <Text> Rodapé </Text> </View>
-    </SafeAreaView>
+      <SafeAreaView style={{ flex: 1 }} >
+
+        <ScrollView style={{ flex: 1 }} >
+
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+          <Text style={{ margin: 30 }}> Teste! </Text>
+
+        </ScrollView>
+
+      </SafeAreaView>
+
+    </SafeAreaProvider>
   );
 }
